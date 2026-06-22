@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRush — Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <span class="logo">TypeRush</span>
+    <nav class="modes">
+        <button class="mode-btn active" data-time="15">15s</button>
+        <button class="mode-btn" data-time="30">30s</button>
+        <button class="mode-btn" data-time="60">60s</button>
+        <button class="mode-btn" data-time="120">120s</button>
+    </nav>
+    <div class="pb">PB <span id="pbDisplay">—</span> <span class="pb-unit">wpm</span></div>
+</header>
+
+<main>
+    <div class="live-stats">
+        <div class="stat">
+            <div class="stat-val" id="timerVal">15</div>
+            <div class="stat-key">time</div>
+        </div>
+        <div class="stat">
+            <div class="stat-val" id="wpmVal">—</div>
+            <div class="stat-key">wpm</div>
+        </div>
+        <div class="stat">
+            <div class="stat-val" id="accVal">—</div>
+            <div class="stat-key">acc</div>
+        </div>
+    </div>
+
+    <div class="word-area" id="wordArea">
+        <div class="word-inner" id="wordInner"></div>
+    </div>
+
+    <input
+        id="typeInput"
+        class="type-input"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        placeholder="click here or start typing…"
+    >
+
+    <p class="hint"><kbd>Tab</kbd> or <kbd>Esc</kbd> to restart</p>
+
+    <!-- Results panel -->
+    <div id="results" class="results" style="display:none">
+        <h2 class="results-title">Results</h2>
+        <div class="result-grid">
+            <div class="result-box highlight">
+                <div class="result-val" id="resWpm">0</div>
+                <div class="result-key">wpm</div>
+            </div>
+            <div class="result-box">
+                <div class="result-val" id="resRaw">0</div>
+                <div class="result-key">raw</div>
+            </div>
+            <div class="result-box">
+                <div class="result-val" id="resAcc">0%</div>
+                <div class="result-key">accuracy</div>
+            </div>
+            <div class="result-box">
+                <div class="result-val" id="resChars">0</div>
+                <div class="result-key">characters</div>
+            </div>
+            <div class="result-box">
+                <div class="result-val" id="resErrors">0</div>
+                <div class="result-key">errors</div>
+            </div>
+        </div>
+        <div id="newPb" class="new-pb" style="display:none">New Personal Best!</div>
+        <button class="btn-restart" onclick="restartGame()">Try Again</button>
+    </div>
+</main>
+
+<footer>
+    TypeRush &mdash; a minimal typing speed test &mdash;
+    <a href="https://github.com/YOUR_USERNAME/typerush" target="_blank">GitHub</a>
+</footer>
+
+<script src="js/words.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
