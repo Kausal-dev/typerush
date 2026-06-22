@@ -23,7 +23,7 @@ A minimal, fast, dark-themed typing speed test — runs entirely in the browser 
 
 ## Live Demo
 
-[**Play now on GitHub Pages →**](https://YOUR_USERNAME.github.io/typerush)
+[**Play now on GitHub Pages →**](https://Kausal-dev.github.io/typerush)
 
 ---
 
@@ -32,7 +32,7 @@ A minimal, fast, dark-themed typing speed test — runs entirely in the browser 
 ### Option A — Open locally (no install)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/typerush.git
+git clone https://github.com/Kausal-dev/typerush.git
 cd typerush
 # Just open index.html in your browser
 start index.html        # Windows
@@ -44,7 +44,7 @@ xdg-open index.html     # Linux
 
 1. Push this repo to GitHub.
 2. Go to **Settings → Pages → Source** and select the `main` branch, `/ (root)`.
-3. Your site will be live at `https://YOUR_USERNAME.github.io/typerush`.
+3. Your site will be live at `https://Kausal-dev.github.io/typerush`.
 
 ---
 
